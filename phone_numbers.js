@@ -1,10 +1,10 @@
 const numbers = [
-  '17636873642',
-  '47636873634',
-  '78678678623',
+  '1763687364',
+  '4763687334',
+  '7867868623',
   'AAAA#####AAAA#87@768767382672',
-  '47673634',
-  '47636873638'
+  '4767363334',
+  '4763687338'
 ];
 
 
@@ -19,3 +19,4 @@ function filterLongNumbers(input){
   return input.filter(checkLength);
 };
 
+console.log(filterLongNumbers(numbers));
