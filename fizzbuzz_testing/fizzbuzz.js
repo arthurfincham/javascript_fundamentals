@@ -11,10 +11,12 @@ const fizzBuzz = (number) => {
 };
 
 function output(){
-  var nums = Array.from(Array(50).keys())
+  var nums = Array.from({length: 51}, (_, i) => i + 1)
   for (var i = 0; i < 51; i++) {
-    console.log(`Fizzbuzz result for ${nums[i]} is ${fizzBuzz(nums[i])}`);
+    console.log(`${fizzBuzz(nums[i])}`);
   }
 };
 
 output();
+
+module.exports = fizzBuzz;
